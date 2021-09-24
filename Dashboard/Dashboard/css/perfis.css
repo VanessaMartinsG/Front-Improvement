@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+  }
+
+  a{
+      text-decoration: none;
+      color: Black;   
+  }
+
+  
+
+  body {
+    height: 100vh;
+  }
+  
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
+h1{
+
+    font-weight: bold;
+    font-size:24px; 
+    
+}
+
+.left-header{
+    width: 290px;
+    padding-left: 23px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.left-header::after{
+    content: "";
+    width: 2px;
+    height: 70px;
+    background-color: #fff;
+    margin-left: auto;
+}
+
+.header-container{
+    width: 100%;
+    display:flex;
+    background-color:#DD4C39;
+    height: 70px;     
+    color:#FFFFFF;  
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 20px;
+    width: 100%;
+}
+.menu svg {
+    margin-left: 21px;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-name p{
+    
+    font-weight: 500;
+    font-style: normal;
+    font-size:18px;
+    padding: 25px;
+}
+  
+.left-panel{
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: 100%;
+    padding: 23px;
+    background-color: #F9FBFC;
+}
+
+.perfilOnline{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#foto{
+    border-radius: 100%;
+    width: 60px;
+}
+
+.userName{
+    margin-left: 15px;
+}
+
+.userName h3{
+    margin-bottom: 10px;
+}
+
+.userName svg{
+    margin-right: 5px;
+}
+
+.optionsLeftSide{
+    display: flex;
+    flex-direction: column;
+    padding-top: 41px;
+}
+
+.optionsLeft{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 29px;
+
+}
+
+.optionsLeft svg{
+    margin-right: 10px;
+}
+
+.rowLeftSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.optionsNumber{
+    display: flex;
+    justify-content: center;
+    width: 18px;
+    height: 16px;
+    color: #E9D0D0;
+    border: 1px solid #3B84AE;
+    background-color: #3B84AE;
+}
+
+.dash-perfis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    background:#DBDBDB;  
+}
+
+.slide{
+    width: 80%;
+    max-width: 848px;
+}
+
+.dash-perfis h2{
+    font-weight: normal;
+    font-style:normal;
+    font-size: 24px;
+    font-family:'Roboto', sans-serif;  
+}
+
+.blocoPerfil{
+   width:848px;
+   height:420px;
+   background-color:#666666;
+   padding: 36px;
+   margin-top:36px;
+   border-radius:5px;
+   gap: 19px;
+   display:flex;
+   flex-direction: row;
+}
+
+.textPart{
+   color:#FFFFFF;
+   width:419px;
+   height:100%;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: space-between;
+}
+
+.description{
+   font-size:18px;
+   font-style: normal;
+}
+
+.textPart a{
+   color:#FFFFFF;
+   font-size:24px;
+   text-decoration: underline;
+   margin-left:4px;
+}
+
+.textPart .nick{
+   font-size:24px;
+}
+
+.textPart .nickName{
+   font-size:24px;
+   font-weight:700;
+   font-style:normal;
+ 
+}
+.imgPart {
+   height:100%;
+}
+
+.imgPart img{
+   height:100%;
+   border-radius: 19px;
+}
+
+.arrowsNav{
+  display:flex;
+  flex-direction:row;
+  width:848px;
+  justify-content: space-between;
+  margin-top: 57px;
+  
+}
+
+.arrows{
+   border-radius:100%;
+   width:40px;
+   height:40px;
+   padding: 10px;
+   background-color:#FFFFFF;
+   border-radius: 100%;
+}
+
+.arrows svg{
+   width: 100%;
+}
+
+
+
+/*
+
+@media (max-width: 490px) {
+
+    h1{
+        font-size: 12px;
+
+    }
+
+    .left-header{
+        
+        width: 200px;
+        padding: 0;
+        padding-left: 20px;
+    }
+    
+    .header-container{
+        height: 7%;    
+    }
+    
+    .right-header{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .header-name p{
+        font-size:12px;  
+        padding-right: 10px;
+    }
+
+    .right-header svg{
+        width: 15px;
+    }
+
+    main{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-panel{
+        background-color: rgba(249,251,252,0.95);
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+        padding-left: 20px;
+        position: absolute;
+        width: 90%;
+        height: 100%;
+    }
+
+    h3{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .userName{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .userName svg{
+        width: 10px;
+    }
+
+    .userName h3{
+        margin-bottom: 0;
+    }
+
+    .rowLeftSide{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+
+    .optionsLeftSide{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .optionsLeft {
+        margin-right: 10px;
+    }
+
+    .dash-panel{
+        width: 100%;
+        height: auto;
+    }
+
+    .dash-panel-welcome{
+        margin-bottom: 35px;
+    }
+
+    .dash-panel-notes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dash-panel-notes1{
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #foto{
+        width: 40px;
+    }
+
+    .perfilOnline{
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+    @media (min-width: 491px) and (max-width: 767px) {
+
+        h1{
+            font-size: 12px;
+        }
+    
+        .left-header{
+            
+            width: 200px;
+            padding: 0;
+            padding-left: 20px;
+        }
+        
+        .header-container{
+            height: 7%;    
+        }
+        
+        .right-header{
+            width: 100%;
+            padding: 5px;
+        }
+    
+        .header-name p{
+            font-size:12px;  
+            padding-right: 10px;
+        }
+    
+        .right-header svg{
+            width: 15px;
+        }
+    
+        main{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .left-panel{
+            background-color: rgba(249,251,252,0.95);
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            width: 270px;
+            height: 100%;
+            z-index: 1;
+            padding-left: 20px;
+        }
+    
+        h3{
+            font-size: 15px;
+            margin-right: 15px;
+        }
+    
+        .userName{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+        .userName svg{
+            width: 10px;
+        }
+        
+        .userName h3{
+            margin-bottom: 0;
+        }
+    
+        .rowLeftSide{
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 5px;
+            justify-content: space-between;
+        }
+    
+        .optionsLeftSide{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .optionsLeft {
+            margin-right: 10px;
+        }
+    
+        .dash-panel{
+            width: 100%;
+            height: auto;
+        }
+    
+        .dash-panel-welcome{
+            margin-bottom: 35px;
+        }
+    
+        .dash-panel-notes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .dash-panel-notes1{
+            margin-left: 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #foto{
+            width: 30px;
+        }
+    
+        .perfilOnline{
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+    
+    }
+    
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        h1{
+            font-size: 15px;
+        }
+    
+        .left-header{ 
+            width: 200px;
+            padding: 0;
+            padding-left: 20px;
+        }
+        
+        .header-container{
+            height: 7%;    
+        }
+        
+        .right-header{
+            width: 100%;
+            padding: 5px;
+        }
+    
+        .header-name p{
+            font-size:12px;  
+            padding-right: 10px;
+        }
+    
+        .right-header svg{
+            width: 15px;
+        }
+    
+        main{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+        }
+    
+        .left-panel{
+            background-color: rgba(249,251,252,0.95);
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            width: 40%;
+            height: 100%;
+            z-index: 1;
+            padding-left: 20px;
+        }
+        .perfilOnline{
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    
+        .userName h3{
+            font-size: 15px;
+            margin-right: 15px;
+            margin-bottom: 0;
+        }
+    
+        .userName{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-right: 30px;
+        }
+    
+        .userName svg{
+            width: 10px;
+        }
+    
+        .rowLeftSide{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 0;     
+        }
+    
+        .optionsLeftSide{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+    
+        .dash-panel{
+            width: 100%;
+            height: auto;
+        }
+    
+        .dash-panel-welcome{
+            margin-bottom: 35px;
+        }
+    
+        .dash-panel-notes{
+            display: grid;
+            grid-template-areas: "box1 box2"
+                                 "box3 box4"
+                                 "box5 box6"; 
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .dash-panel-notes1{
+           margin: 15px;
+        }
+
+        #foto{
+            width: 40px;
+        }
+    
+    }
+    
+*/
+
+
