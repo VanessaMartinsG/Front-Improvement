@@ -13,7 +13,10 @@
   
 
   body {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
   }
   
 main{
@@ -154,8 +157,8 @@ h1{
 .dash-perfis{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    padding: 23px;
     width:100%;
     height:100%;
     background:#DBDBDB;  
@@ -241,14 +244,107 @@ h1{
    height:40px;
    padding: 10px;
    background-color:#FFFFFF;
-   border-radius: 100%;
 }
 
 .arrows svg{
    width: 100%;
 }
 
+#modal{
+    background-color: rgba(6, 7, 7, 0.9);
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
 
+#modalContent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#closeModal{
+    color: rgba(255, 0, 0, 0.86);
+    font-size: 18px;
+    margin-top: 53px;
+}
+
+
+.leftModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    text-align: left;
+    margin-right: 124px;
+}
+
+#tituloDescricao{
+    font-size: 40px;
+    font-family:'Roboto', sans-serif;  
+    font-weight: normal;
+    margin-bottom: 72px;
+}
+
+.leftModal p{
+    font-size: 22px;
+    font-family:'Roboto', sans-serif;  
+    font-weight: normal;
+}
+
+.rightModal{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+#tituloFavAtv{
+    font-size: 32px;
+    font-family:'Roboto', sans-serif;
+    font-weight: normal;
+    margin-bottom: 72px;
+}
+
+.imgFavAtv{
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "img1 img2"
+                         "img3 img4";
+    gap: 54px 50px;
+}
+
+.imgatv1{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    grid-area:img1;
+}
+.imgatv2{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    grid-area:img2;
+}
+.imgatv3{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    grid-area:img3;
+}
+.imgatv4{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    grid-area:img4;
+}
 
 /*
 
