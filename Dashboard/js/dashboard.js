@@ -1,6 +1,14 @@
 
 let menu = document.querySelector(".left-panel");
+let modal = document.querySelector("#modal");
 
+  function abrirModal() {
+    modal.style.display = "flex";
+  }
+
+  function fecharModal() {
+    modal.style.display = "none";
+  }
 
 function showMenu(){
 
