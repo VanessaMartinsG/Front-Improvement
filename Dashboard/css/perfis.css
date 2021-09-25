@@ -15,7 +15,7 @@
   body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
     position: relative;
   }
   
@@ -257,7 +257,7 @@ h1{
     width: 100%;
     height: 100%;
     top: 0;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
@@ -267,12 +267,12 @@ h1{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 53px;
 }
 
 #closeModal{
     color: rgba(255, 0, 0, 0.86);
     font-size: 18px;
-    margin-top: 53px;
 }
 
 
@@ -346,7 +346,7 @@ h1{
     grid-area:img4;
 }
 
-/*
+
 
 @media (max-width: 490px) {
 
@@ -433,39 +433,123 @@ h1{
         margin-right: 10px;
     }
 
-    .dash-panel{
+    .dash-perfis{
         width: 100%;
         height: auto;
+        padding: 25px 0px;
     }
 
-    .dash-panel-welcome{
-        margin-bottom: 35px;
-    }
-
-    .dash-panel-notes{
+    .slide{
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .blocoPerfil{
+        align-items: center;
+        padding: 15px;
+        height: 400px;
+    }
+
+    .textPart{
+        width: 250px;
+    }
+
+    .imgPart{
+        margin-bottom: 15px;
+        height: auto;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .dash-panel-notes1{
-        margin-left: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    .imgPart img{
+        width: 100px;
+        height: 100px;
+     }
 
-    #foto{
-        width: 40px;
-    }
+     .blocoPerfil{
+         width: 300px;
+         flex-direction: column-reverse;
+     }
 
-    .perfilOnline{
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 40px;
-    }
+     .dash-perfis h2{
+         font-size: 20px;
+     }
 
-}
+     .description{
+         font-size: 16px;
+     }
+
+     .textPart .nick{
+         font-size: 20px;
+     }
+
+     .textPart .nickName{
+         font-size: 20px;
+     }
+
+     .arrowsNav{
+         width: 300px;
+         margin-top: 30px;
+     }
+   
+     #modal{
+         height: fit-content;
+     }
+
+     #modalBox{
+        padding: 30px;
+     }
+
+     #modalContent{
+         align-items: center;
+         flex-direction: column;
+     }
+     
+     .leftModal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+     }
+
+     #tituloDescricao{
+        font-size: 28px;
+        margin-bottom: 30px;
+     }
+
+     .leftModal p{
+        font-size: 18px;
+        margin-bottom: 60px;
+     }
+
+     .rightModal{
+         width: 100%;
+         align-items: flex-start;
+     }
+
+     #tituloFavAtv{
+        font-size: 28px;
+        margin-bottom: 30px;  
+     }
+
+     #closeModal{
+        margin-top: 40px;
+        margin-bottom: 30px;
+     }
+
+     .botaoFechar{
+        background-color: #101010;
+        text-align: center;
+        border-radius: 5px;
+        height: 30px;
+        padding: 5px;
+        box-shadow: 1px 1px 1px #480707;
+     }
+    }
 
     @media (min-width: 491px) and (max-width: 767px) {
 
@@ -582,6 +666,123 @@ h1{
             align-items: center;
             margin-bottom: 40px;
         }
+
+        .dash-perfis{
+            width: 100%;
+            height: auto;
+            padding: 25px 0px;
+        }
+    
+        .slide{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .blocoPerfil{
+            align-items: center;
+            padding: 15px;
+            height: 400px;
+        }
+    
+        .textPart{
+            width: 250px;
+        }
+    
+        .imgPart{
+            margin-bottom: 15px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .imgPart img{
+            width: 100px;
+            height: 100px;
+         }
+    
+         .blocoPerfil{
+             width: 300px;
+             flex-direction: column-reverse;
+         }
+    
+         .dash-perfis h2{
+             font-size: 20px;
+         }
+    
+         .description{
+             font-size: 16px;
+         }
+    
+         .textPart .nick{
+             font-size: 20px;
+         }
+    
+         .textPart .nickName{
+             font-size: 20px;
+         }
+    
+         .arrowsNav{
+             width: 300px;
+             margin-top: 30px;
+         }
+       
+         #modal{
+             height: fit-content;
+         }
+    
+         #modalBox{
+            padding: 30px;
+         }
+    
+         #modalContent{
+             align-items: center;
+             flex-direction: column;
+         }
+         
+         .leftModal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: left;
+            margin: 0;
+         }
+    
+         #tituloDescricao{
+            font-size: 28px;
+            margin-bottom: 30px;
+         }
+    
+         .leftModal p{
+            font-size: 18px;
+            margin-bottom: 60px;
+         }
+    
+         .rightModal{
+             width: 100%;
+             align-items: flex-start;
+         }
+    
+         #tituloFavAtv{
+            font-size: 28px;
+            margin-bottom: 30px;  
+         }
+    
+         #closeModal{
+            margin-top: 40px;
+            margin-bottom: 30px;
+         }
+    
+         .botaoFechar{
+            background-color: #101010;
+            text-align: center;
+            border-radius: 5px;
+            height: 30px;
+            padding: 5px;
+            box-shadow: 1px 1px 1px #480707;
+         }
     
     }
     
@@ -669,34 +870,70 @@ h1{
         }
 
     
-        .dash-panel{
+        .dash-perfis{
             width: 100%;
             height: auto;
         }
     
-        .dash-panel-welcome{
-            margin-bottom: 35px;
-        }
-    
-        .dash-panel-notes{
-            display: grid;
-            grid-template-areas: "box1 box2"
-                                 "box3 box4"
-                                 "box5 box6"; 
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .dash-panel-notes1{
-           margin: 15px;
+        .slide {
+            width: 100%;
+            max-width: 700px;
         }
 
-        #foto{
-            width: 40px;
+        .blocoPerfil{
+            width: 700px;
+            height: 350px;
         }
-    
+
+        .arrowsNav{
+            width: 700px;
+            margin-top: 30px;
+        }
+
+        #modal{
+            height: 100%;
+        }
+   
+        #modalBox{
+           padding: 30px;
+        }
+   
+        #modalContent{
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+        
+        .leftModal{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           width: 100%;
+           text-align: left;
+           margin: 0;
+           margin-right: 25px;
+        }
+   
+        #tituloDescricao{
+           font-size: 28px;
+           margin-bottom: 30px;
+        }
+   
+        .leftModal p{
+           font-size: 18px;
+           margin-bottom: 60px;
+        }
+   
+        .rightModal{
+            width: 100%;
+        }
+   
+        #tituloFavAtv{
+           font-size: 28px;
+           margin-bottom: 30px;  
+        }
+
     }
     
-*/
+
 
 
