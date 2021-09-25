@@ -27,8 +27,7 @@
             <h1>Painel Admin 0.1</h1>
         </div>
         <div class="right-header">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
-                onclick="showMenu()">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 30H30V25H0V30ZM0 17.5H30V12.5H0V17.5ZM0 0V5H30V0H0Z" fill="white" />
             </svg>
 
@@ -131,17 +130,16 @@
                             RPG.
                         </p>
                         <p class="nick">
-                            Nick:<a href="javascript:void(0)" onclick="abrirModal()" class="nickName">Bad Luck For
-                                You</a>
+                            Nick:<a href="javascript:void(0)" class="nickName">Bad Luck For You</a>
                         </p>
                     </div>
                     <div class="imgPart">
-                        <img src="img/imgBruno.jpg" alt="Foto do perfil">
+                        <img src="img/brunoPerfil.jpg" alt="Foto do perfil">
                     </div>
                 </div>
 
                 <div class="arrowsNav">
-                    <div class="arrows">
+                    <div class="arrows arrowsReturn">
                         <svg width="13" height="20" viewBox="0 0 13 20" transform="rotate(180)" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -149,7 +147,7 @@
                                 fill="black" />
                         </svg>
                     </div>
-                    <div class="arrows">
+                    <div class="arrows arrowsNext">
                         <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2.66677 0L0.316772 2.35L7.95011 10L0.316772 17.65L2.66677 20L12.6668 10L2.66677 0Z"
@@ -164,28 +162,21 @@
         <div id="modalBox">
             <div id="modalContent">
                 <div class="leftModal">
-                    <h1 id="tituloDescricao">Bruno Pitta</h1>
-                    <p>Desenvolvedor Front End Pleno, atualmente trabalhando na VX Case, além de trabalhar como monitor
-                        no curso da cubos academy em parceria com o ifood. Atualmente estudando Next. Não menos
-                        importante, mas ama bastante dark souls e é jogador de mago em qualquer RPG.
-                        <br><br>Estou habituado com html, css e javascript, além de ter experiência em projetos com
-                        angular, vue e React, apesar de ter clara preferência pelo último, devido a isso que decidi
-                        escolher o next.
-                        <br><br>Possuo pouco mais de 2 anos de experiência e não estou aberto a novas propostas de
-                        trabalho no momento! <br>
+                    <h1 id="tituloDescricao"></h1>
+                    <p class="descricaoModal">
                     </p>
                 </div>
                 <div class="rightModal">
                     <h2 id="tituloFavAtv">Atividades favoritas:</h2>
                     <div class="imgFavAtv">
-                        <img class="imgatv1" src="img/lol.png" alt="Imagem de LOL">
-                        <img class="imgatv2" src="img/yugioh.png" alt="Imagem de Yugi-Oh">
-                        <img class="imgatv3" src="img/darksouls.png" alt="Imagem de Dark Souls">
-                        <img class="imgatv4" src="img/pokemon.png" alt="Imagem de Pockemon">
+                        <img class="imgatv1" src="" alt="Imagem de LOL">
+                        <img class="imgatv2" src="" alt="Imagem de Yugi-Oh">
+                        <img class="imgatv3" src="" alt="Imagem de Dark Souls">
+                        <img class="imgatv4" src="" alt="Imagem de Pockemon">
                     </div>
                 </div>
             </div>
-            <div class="botaoFechar" onclick="fecharModal()">
+            <div class="botaoFechar">
                 <a href="javascript:void(0)" id="closeModal">Sair</a>
             </div>
         </div>
